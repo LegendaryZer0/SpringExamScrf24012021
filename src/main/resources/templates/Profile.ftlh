@@ -1,0 +1,36 @@
+<#ftl encoding="UTF-8"/>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>THIS IS PROFILE</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<h2>IT IS PROFILE</h2><br>
+<div class="login">
+    <form id="catchMe" method="POST" action="catchUser">
+        <label><b>User Name
+            </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Password
+            </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <input type="button" name="log" id="log" value="Log In Here">
+        <br><br>
+        <input type="checkbox" id="check">
+        <input id ='csrf-token' name="_csrf_token" value="${_csrf_token}" />
+        <span>Remember me</span>
+        <br><br>
+        Forgot <a href="#">Password</a>
+        <p><input type="submit"  value="CATCH ME"></p>
+    </form>
+</div>
+
+</body>
+</html>
